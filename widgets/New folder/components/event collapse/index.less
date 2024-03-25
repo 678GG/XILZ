@@ -1,0 +1,61 @@
+.eventCollapse {
+  &__caret {
+    color: var(--v3-black-45);
+    transition: transform 0.24s;
+
+    &-expanded {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__body {
+    height: 0;
+
+    &--open {
+      height: initial;
+    }
+  }
+}
+
+div.v3-event-collapse__header.v3-event-collapse__header--esport {
+  padding: 8px 16px;
+  background-color: var(--v3-black-0);
+}
+
+.v3-event-collapse__esportPrematchAll {
+  background-color: var(--v3-black-2);
+
+  &--mobile {
+    margin-top: 4px;
+    background-color: var(--v3-black-6);
+
+    &:not(.v3-event-collapse__esportPrematchAll) {
+      margin: 4px;
+    }
+
+    .v3-select-arrow {
+      right: 5px;
+    }
+  }
+}
+
+.esport__competitions__container--mobile {
+  .esport__collapse__container {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  .eventCollapse__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  div.v3-event-collapse__header.v3-event-collapse__header--esport {
+    padding: 8px 12px;
+  }
+
+  .esport__collapse__container > .v3-event-collapse__header {
+    padding: 0 12px;
+  }
+}
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

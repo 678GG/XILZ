@@ -1,0 +1,260 @@
+.CasinoTournamentCard {
+  &__prizeWrapper {
+    flex: 12;
+    display: flex;
+    align-items: flex-start;
+    height: 103px;
+  }
+  &__cup-icon {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  &__timeTitle {
+    height: 36px;
+    background-color: var(--v3-black-6);
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.07px;
+    &__start {
+     color: #31CDC7;
+    }
+    &__end {
+      color: #FF6262;
+    }
+  }
+}
+
+.tour__right-section {
+  .eZBPOa {
+    margin-top: 8px !important;
+  }
+}
+
+.tour {
+  &__card-section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+  }
+
+  &__right-section {
+    flex: 2;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+  }
+
+  &__desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 12px;
+    line-height: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--v3-text-color);
+    position: relative;
+  }
+
+  &__game-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--v3-text-color);
+  }
+
+  &__fund-label {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    vertical-align: top;
+    color: var(--v3-text-color);
+
+    &--singleView {
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+      color: var(--v3-white);
+    }
+  }
+
+  &__fundAmount {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: var(--v3-text-color);
+    white-space: nowrap;
+
+    &--singleView {
+      color: var(--v3-white);
+    }
+  }
+}
+
+.tournament {
+  &__card {
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+    max-width: 100%;
+    background-color: var(--v3-black-0);
+    margin: 0 auto 24px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 3px 6px -1px rgba(98, 98, 98, 0.08);
+    border: 1px solid var(--v3-black-6);
+  }
+
+  &__img {
+    width: 435px;
+    height: 308px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    color: var(--v3-text-color);
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: 0.12px;
+
+    &--wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  &__readMore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--v3-black-0);
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--v3-primary-6);
+
+    &::before {
+      content: "...";
+      margin-right: 6px;
+      color: var(--v3-text-color);
+      text-decoration: unset;
+      display: inline-block;
+    }
+  }
+
+  &__prize__wrapper {
+    display: flex;
+  }
+
+  &__showAll {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--v3-text-color);
+  }
+
+  &__games__count {
+    border-radius: 11px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--v3-text-color);
+  }
+
+  &__gamesCount__wrapper {
+    border-radius: 11px;
+    font-size: 18px;
+    height: 100%;
+    text-align: center;
+    background-color: var(--v3-black-6);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__game {
+    width: 23%;
+    margin: 16px 1% 0;
+    overflow: hidden;
+    border-radius: 11px;
+
+    &__wrapper {
+      display: flex;
+      margin: 0 -1%;
+    }
+  }
+
+  &__gameSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  &__square__wrapper {
+    width: 40px;
+    margin-top: 32px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  &__entryFee {
+    font-size: 16px;
+    color: var(--v3-primary-6);
+    font-weight: 600;
+    line-height: 24px;
+    font-style: normal;
+    letter-spacing: 0.08px;
+
+    &__label {
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 20px;
+      letter-spacing: 0.07px;
+    }
+
+    &__container {
+      display: flex;
+      color: var(--v3-text-color);
+      justify-content: space-between;
+    }
+  }
+
+  &__fundWrapper {
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+
+    &--singleView {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

@@ -1,0 +1,129 @@
+.csItemPreview__gameName {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.42px;
+  padding: 12px 8px 4px 8px;
+  color: var(--v3-text-color);
+}
+
+.csItemPreview__providerName {
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.48px;
+  color: var(--v3-text-color-secondary);
+}
+
+.csItemPreview__image {
+  z-index: 1;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  margin: -90px auto 0;
+  border-radius: 8px;
+  position: relative;
+}
+.tour__detail-block {
+  padding: 8px;
+  margin: -40px 12px 4px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  column-gap: 15px;
+  background-color: var(--v3-black-0);
+  border-radius: 10px;
+  border: var(--v3-black-6);
+  box-shadow: var(--v3-shadow-1-down);
+
+  &__img {
+    width: 120px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  &__info {
+    flex: 1;
+    text-align: left;
+    color: var(--v3-text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 26px;
+
+    &__block {
+      flex: 1;
+      border-bottom: 1px solid var(--v3-black-6);
+    }
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--v3-cyan-base);
+  }
+  &__name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    color: var(--v3-text-color);
+
+  }
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--v3-black-45);
+
+    &__days {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+
+      &__start {
+        color: #31CDC7;
+      }
+
+      &__end {
+        color: #FF6262;
+      }
+    }
+
+    &__timeTitle {
+      width: inherit;
+      height: inherit;
+      text-align: center;
+      color: var(--v3-text-color);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.casino__ {
+  &game-popup {
+    position: absolute !important;
+    z-index: 13;
+
+    .customPopup--open {
+      position: fixed !important;
+    }
+  }
+
+  &popup-container {
+    overflow: auto;
+    z-index: 1;
+  }
+}
+
+
+
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

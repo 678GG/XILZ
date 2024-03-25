@@ -1,0 +1,52 @@
+.competitionWithTooltip {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px 8px;
+  cursor: pointer;
+  color: var(--v3-text-color);
+  overflow: hidden;
+  margin-right: 0 !important;
+  height: 32px;
+  margin-bottom: 4px;
+  .Competitions__FavoriteIconWrapper {
+    margin-right: 8px !important;
+  }
+
+  &--active {
+    background: var(--v3-black-0);
+  }
+
+  &--active,
+  &--hover:hover {
+    color: var(--v3-black-85);
+    border-radius: 6px;
+  }
+
+  &--hover:hover {
+    background: var(--v3-black-2);
+    box-shadow: var(--v3-shadow-strong);
+  }
+
+  &__name {
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+  }
+
+  &-mobile {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background-color: var(--v3-black-0);
+    margin-bottom: 0;
+
+    &:not(.competitionWithTooltip--competitionLayout) {
+      margin-top: 4px;
+    }
+  }
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

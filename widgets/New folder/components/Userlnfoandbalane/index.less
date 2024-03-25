@@ -1,0 +1,188 @@
+.userInfoAndBalance {
+  margin-bottom: 16px;
+  &__userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  &__info {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--v3-black-6);
+    &__tooltip {
+      .v3-tooltip-inner {
+        max-width: 226px;
+      }
+    }
+    &__checkedIcon {
+      color: var(--v3-white);
+      background-color: var(--v3-cyan-base);
+      border-radius: 100%;
+      width: 18px;
+      height: 18px;
+      font-size: 9px;
+      border: 2px solid var(--v3-white);
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+      left: 40px;
+    }
+    &__editIcon {
+      margin-right: 8px;
+      position: relative;
+      top: 3px;
+    }
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 12px;
+      position: relative;
+      align-items: center;
+    }
+    &__details {
+      padding-left: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 4px;
+      &__user {
+        color: var(--v3-text-color-secondary);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 226px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      &__username {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--v3-text-color);
+        max-width: 240px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+      &__id {
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+        color: var(--v3-text-color-secondary);
+        margin-left: 6px;
+      }
+      &__icon {
+        cursor: pointer;
+        display: inline-flex;
+        flex-wrap: wrap;
+        .popoverWrapper {
+          margin-left: 0;
+          span {
+            color: var(--v3-black-45);
+          }
+        }
+        .v3-popover {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          left: 0 !important;
+          .v3-popover-arrow {
+            width: 30px;
+          }
+        }
+      }
+      &__bonus {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        margin-bottom: 12px;
+        border-radius: 4px;
+        font-size: 14px;
+
+        .bonus-text {
+          margin: 0 4px;
+          position: relative;
+          z-index: 1;
+        }
+
+        &.green {
+          border: 1px solid var(--v3-cyan-base);
+          color: var(--v3-cyan-base);
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: var(--v3-cyan-base);
+            opacity: 0.2;
+          }
+        }
+
+        &.red {
+          border: 1px solid var(--v3-red-3);
+          color: var(--v3-red-3);
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: var(--v3-red-3);
+            opacity: 0.2;
+          }
+        }
+
+        &.gray {
+          background: var(--v3-black-6);
+          color: var(--v3-black-45);
+        }
+      }
+    }
+  }
+}
+.statusColorDes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  width: 79px;
+  height: 20px;
+  margin-left: 4px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--v3-text-color-secondary-fixed);
+}
+.colorOrange {
+  background-color: #f7c125;
+}
+.colorGreen {
+  background-color: #31cdc7;
+}
+
+.colorRed {
+  background-color: #ff6262;
+}
+
+.user__avatar {
+  min-width: 56px;
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;
