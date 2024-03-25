@@ -1,0 +1,76 @@
+.navigationCollapse {
+  &__caret {
+    transition: transform 0.24s;
+    
+    &-expanded {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__body {
+    height: 0;
+
+    &--open {
+      height: initial;
+    }
+  }
+
+  &__title {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--v3-text-color);
+    flex: 1;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    line-height: 16px;
+    margin: 0 8px;
+  }
+
+  &__wrapper {
+    cursor: pointer;
+    background-color: var(--v3-black-4);
+    overflow: hidden;
+    margin-bottom: 4px;
+    border-radius: 10px;
+
+    &--active {
+      padding-bottom: 8px;
+
+      & > div {
+        &:first-child {
+          margin: 0 0 8px;
+          border-bottom: 1px solid var(--v3-black-6);
+        }
+
+        &:not(.competitions-by-lists){
+          padding: 0 8px;
+        }
+      }
+
+      a {
+        display: block;
+        margin: 0 8px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav__icon {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

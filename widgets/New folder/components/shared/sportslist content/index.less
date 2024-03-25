@@ -1,0 +1,285 @@
+.sportsList {
+  text-align: left;
+  overflow: auto;
+  width: 100%;
+  padding: 8px;
+  background-color: var(--v3-black-0);
+  border-radius: 6px;
+
+  &--compact {
+    background-color: var(--v3-black-2);
+    .prematch__sportsList__sport__header {
+      padding: 0 8px 0 8px;
+    }
+  }
+
+  figure {
+    margin: 8px 0 0;
+    background-color: var(--v3-black-4);
+  }
+
+  &__boosted.sportsList__sport {
+    .lazyLoad__wrapper {
+      margin: 0;
+
+      & > div:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        margin: 0;
+
+        .Competitions__FavoriteIconWrapper__FavoriteIcon {
+          font-size: 16px !important;
+        }
+      }
+    }
+
+    .v3-event-collapse {
+      padding-bottom: 4px;
+
+      &__header {
+        &.v3-event-collapse__header-active {
+          margin-bottom: 8px;
+          border-bottom: 1px solid var(--v3-black-6);
+        }
+      }
+    }
+  }
+
+  &__groupWithSports {
+    padding-left: 4px;
+    padding-right: 4px;
+    .prematch__sportsList__sport__wrapper {
+      padding: 0 4px;
+    }
+
+    & > div {
+      &:first-child {
+        margin: 0 4px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-bottom: 8px;
+      }
+
+      &:not(:first-child) {
+        background-color: var(--v3-black-2);
+        box-shadow: var(--v3-shadow-strong);
+        border-radius: 6px;
+
+        & > div {
+          min-height: 40px;
+          margin-left: 0;
+          padding-right: 8px;
+          padding-left: 8px;
+          margin-right: 0;
+        }
+
+        .competitionWithTooltip {
+          background: var(--v3-black-0);
+          border-radius: 6px;
+        }
+
+        a:last-child .competitionWithTooltip {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  &__sport {
+    background-color: var(--v3-black-4) !important;
+    border-radius: 8px !important;
+
+    .sport-arrow-right {
+      transform: rotate(-90deg);
+    }
+
+    &__header {
+      min-height: 48px !important;
+
+      & > div {
+        display: flex;
+      }
+    }
+
+    .v3-event-collapse {
+      padding: 0 8px;
+      background-color: var(--v3-black-2);
+      &__header {
+        padding: 0;
+        background-color: transparent;
+        .eventCollapse__title {
+          font-size: 14px;
+        }
+      }
+      .sportsbookListViewCompetiton__wrapper {
+        background-color: var(--v3-black-0);
+        padding: 0 8px 0;
+        height: 32px;
+        margin-bottom: 4px;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: var(--v3-black-4);
+        }
+
+        .v3-icon {
+          order: 1;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+
+  .prematch__sportsList__sport__wrapper {
+    background-color: var(--v3-black-2);
+  }
+
+  .prematch__sportsList__sport__header--active {
+    background-color: var(--v3-black-2);
+  }
+
+  .prematch__sportsList__region__wrapper {
+    background-color: var(--v3-black-0);
+  }
+
+  .prematch__sportsList__region__header--active {
+    background-color: var(--v3-black-0);
+  }
+
+  &__region {
+    background-color: var(--v3-black-2) !important;
+    box-shadow: var(--v3-shadow-strong);
+
+    & > a:last-child .competitionWithTooltip {
+      margin-bottom: 0;
+    }
+
+    .competitionWithTooltip {
+      border-radius: 6px;
+      background-color: var(--v3-black-0);
+      box-shadow: var(--v3-shadow-strong);
+
+      &:hover {
+        background: var(--v3-black-4);
+      }
+    }
+
+    &__header {
+      min-height: 40px !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: 0 8px !important;
+    }
+  }
+
+  &__skeleton {
+    background-color: var(--v3-black-4);
+    height: 48px;
+    margin-bottom: 4px;
+    padding: 12px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    .v3-skeleton {
+      display: flex;
+      align-items: center;
+
+      &-header {
+        padding-right: 8px;
+      }
+    }
+
+    .v3-skeleton-header {
+      padding-right: 8px;
+    }
+
+    &--lightBg {
+      background-color: var(--v3-black-2);
+      height: 40px;
+    }
+  }
+
+  .topMatches {
+    &__wrapper {
+      background-color: var(--v3-black-4) !important;
+
+      .topMatchesSportsListWrapper {
+        background-color: var(--v3-black-4) !important;
+
+        .sportItem {
+          background-color: var(--v3-black-2) !important;
+        }
+      }
+    }
+  }
+}
+
+.prematch__sportsList__regions {
+  padding: 4px;
+}
+
+.competitionsList__showAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid var(--v3-black-6);
+  color: var(--v3-primary-6);
+  font-size: 12px;
+  line-height: 16px;
+  gap: 6px;
+}
+
+.manual-sport-item {
+  padding-left: 12px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 4px;
+  .sportsList__sport__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 52px;
+    line-height: 16px;
+    > span {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      color: var(--v3-text-color);
+      flex: 1;
+    }
+    > div {
+      margin-right: 8px;
+    }
+  }
+  .sport-arrow-right {
+    border-radius: 4px;
+    color: var(--v3-black-45) !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+  }
+}
+
+.leftSideBarSport--active {
+  background: var(--v3-black-6);
+  border-radius: 8px;
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

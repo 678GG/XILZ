@@ -1,0 +1,57 @@
+.keyboard {
+  &__container {
+    background-color: var(--v3-black-4);
+    padding: 8px;
+  }
+
+  &__keys {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__numberKeys {
+    display: flex;
+    flex: 75%;
+    flex-wrap: wrap;
+    direction: ltr;
+  }
+
+  &__key {
+    box-shadow: var(--v3-shadow-2);
+    color: var(--v3-text-color-secondary);
+    background: var(--v3-black-0);
+    flex: 1;
+    border-radius: 4px;
+    font-size: 20px;
+    min-width: calc(100% / 3 - 6px);
+    font-weight: 600;
+    height: 40px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    order: 1;
+    justify-content: center;
+
+    &[aria-disabled="true"] {
+      opacity: 0.5;
+    }
+
+    &--grow {
+      flex: 3;
+    }
+
+    &--size {
+      font-size: 16px;
+      min-width: calc(100% / 7 - 6px);
+    }
+
+    &--done {
+      width: 100%;
+      color: var(--v3-success-color);
+      font-weight: normal;
+      font-size: 16px;
+      flex: 8;
+    }
+  }
+}
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;
